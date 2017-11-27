@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF9CF095-C91B-4DBB-8828-3A412FBA24CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArchivesSpace_.Net_Client</RootNamespace>
+    <AssemblyName>ArchivesSpace_.Net_Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArchivesSpaceAccessionManager.cs" />
+    <Compile Include="ArchivesSpaceConnectionHandler.cs" />
+    <Compile Include="ArchivesSpaceContainerProfileManager.cs" />
+    <Compile Include="ArchivesSpaceLocationManager.cs" />
+    <Compile Include="ArchivesSpaceObjectManagerBase.cs" />
+    <Compile Include="ArchivesSpaceArchivalObjectManager.cs" />
+    <Compile Include="ArchivesSpaceResourceManager.cs" />
+    <Compile Include="ArchivesSpaceSearch.cs" />
+    <Compile Include="ArchivesSpaceService.cs" />
+    <Compile Include="ArchivesSpaceTopContainerManager.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="CustomJsonConverters.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="AsLogger.cs" />
+    <Compile Include="Models\ArchivalObject.cs" />
+    <Compile Include="Models\ArchivalObjectBase.cs" />
+    <Compile Include="Models\Accession.cs" />
+    <Compile Include="Models\ArchivesSpaceCredential.cs" />
+    <Compile Include="Models\Classification.cs" />
+    <Compile Include="Models\ClassificationTerm.cs" />
+    <Compile Include="Models\CollectionManagement.cs" />
+    <Compile Include="Models\Container.cs" />
+    <Compile Include="Models\ContainerConsolidated.cs" />
+    <Compile Include="Models\ContainerLocation.cs" />
+    <Compile Include="Models\ContainerProfile.cs" />
+    <Compile Include="Models\Date.cs" />
+    <Compile Include="Models\Deaccession.cs" />
+    <Compile Include="Models\Extent.cs" />
+    <Compile Include="Models\ExternalDocument.cs" />
+    <Compile Include="Models\ExternalId.cs" />
+    <Compile Include="Models\FileVersion.cs" />
+    <Compile Include="Models\Instance.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\LocationProfile.cs" />
+    <Compile Include="Models\ModelTypes.cs" />
+    <Compile Include="Models\NoteBase.cs" />
+    <Compile Include="Models\NoteBibliography.cs" />
+    <Compile Include="Models\NoteIndex.cs" />
+    <Compile Include="Models\NoteIndexItem.cs" />
+    <Compile Include="Models\NoteItemBase.cs" />
+    <Compile Include="Models\NoteItemChronology.cs" />
+    <Compile Include="Models\NoteItemDefinedList.cs" />
+    <Compile Include="Models\NoteItemOrderedList.cs" />
+    <Compile Include="Models\NoteItemText.cs" />
+    <Compile Include="Models\NoteMultipart.cs" />
+    <Compile Include="Models\NoteSinglepart.cs" />
+    <Compile Include="Models\RecordTreeBase.cs" />
+    <Compile Include="Models\RecordTreeResource.cs" />
+    <Compile Include="Models\RefBase.cs" />
+    <Compile Include="Models\RefContainerProfile.cs" />
+    <Compile Include="Models\RefLocationProfile.cs" />
+    <Compile Include="Models\RefRepository.cs" />
+    <Compile Include="Models\RefArchivalObject.cs" />
+    <Compile Include="Models\RefSeries.cs" />
+    <Compile Include="Models\RefResource.cs" />
+    <Compile Include="Models\RefTopContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Repository.cs" />
+    <Compile Include="Models\Resource.cs" />
+    <Compile Include="Models\RevisionStatement.cs" />
+    <Compile Include="Models\RightsRestriction.cs" />
+    <Compile Include="Models\RightsStatement.cs" />
+    <Compile Include="Models\SearchAdvancedQueryBase.cs" />
+    <Compile Include="Models\SearchAdvancedQueryBoolean.cs" />
+    <Compile Include="Models\SearchOptions.cs" />
+    <Compile Include="Models\SearchResultBase.cs" />
+    <Compile Include="Models\SearchResultEntryBase.cs" />
+    <Compile Include="Models\SearchResultEntryArchivalObject.cs" />
+    <Compile Include="Models\SearchResultEntryResource.cs" />
+    <Compile Include="Models\SearchResultEntryTopContainer.cs" />
+    <Compile Include="Models\SearchResultArchivalObject.cs" />
+    <Compile Include="Models\SearchResultResource.cs" />
+    <Compile Include="Models\SearchResultTopContainer.cs" />
+    <Compile Include="Models\SmallTree.cs" />
+    <Compile Include="Models\SubContainer.cs" />
+    <Compile Include="Models\TopContainer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

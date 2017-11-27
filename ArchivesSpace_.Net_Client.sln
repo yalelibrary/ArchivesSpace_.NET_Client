@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchivesSpace_.Net_Client", "ArchivesSpace_.Net_Client\ArchivesSpace_.Net_Client.csproj", "{FF9CF095-C91B-4DBB-8828-3A412FBA24CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchivesSpace_.Net_Client_Demo", "ArchivesSpace_.Net_Client_Demo\ArchivesSpace_.Net_Client_Demo.csproj", "{F67387FB-5D3A-4456-AFBB-DED240FAB0AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF9CF095-C91B-4DBB-8828-3A412FBA24CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9CF095-C91B-4DBB-8828-3A412FBA24CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9CF095-C91B-4DBB-8828-3A412FBA24CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9CF095-C91B-4DBB-8828-3A412FBA24CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F67387FB-5D3A-4456-AFBB-DED240FAB0AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67387FB-5D3A-4456-AFBB-DED240FAB0AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67387FB-5D3A-4456-AFBB-DED240FAB0AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67387FB-5D3A-4456-AFBB-DED240FAB0AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
